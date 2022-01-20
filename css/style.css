@@ -5,7 +5,65 @@
     box-sizing: border-box;
 }
 
-/******* HEADER *******/
+/******* COMMONS *******/
+body {
+    font-family: 'Lato', sans-serif;
+}
 
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+/******* HEADER *******/
+header {
+    height: 80px;
+    background-color: #2e3a46;
+}
+
+.img_logo {
+    height: 100%;
+    padding: 10px;
+}
+
+img {
+    height: 100%;
+}
 
 /******* MAIN *******/
+
+main {
+    height: calc(100vh - 80px);
+    background-color: #1e2d3b;
+    padding: 50px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(100% / 5 - 40px);
+    text-align: center;
+    background-color: #2e3a46;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.box_img img{
+    width: 100%;
+}
+
+.box_album {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px 0;
+}
+
+.box_info .info {
+    font-size: .9rem;
+    color: #72685f;
+}

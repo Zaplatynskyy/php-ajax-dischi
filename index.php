@@ -73,6 +73,24 @@ $database = [
 	]
 ];
 
+
+
+function isContain($world, $database) {
+    $filtered = [];
+    foreach($database as $element) {
+        if($element['genre'] == $world) {
+            $filtered[] = $element;
+        }
+    }
+    return $filtered;
+}
+
+if(!empty($_GET['genre'])) {
+    $database = isContain($_GET['genre'], $database);
+}
+
+// var_dump($database);
+
 header('Content-Type: application/json');
 
 echo json_encode($database);

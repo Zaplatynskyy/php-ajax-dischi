@@ -22,6 +22,12 @@
         </header>
 
         <main>
+
+            <select v-model="genreSelected" @change="filterGenre()">
+                <option value="">All</option>
+                <option :value="genre" v-for="genre in genres">{{genre}}</option>
+            </select>
+
             <div class="container">
                 <!-- riga contenitore dischi -->
                 <div class="row">

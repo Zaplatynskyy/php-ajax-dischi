@@ -35,9 +35,21 @@ img {
 
 main {
     height: calc(100vh - 80px);
+    text-align: center;
     background-color: #1e2d3b;
-    padding: 50px 0;
+    padding: 10px;
     overflow: auto;
+}
+
+select {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: #2e3a46;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
 }
 
 /* riga contenitore dischi */

@@ -17,25 +17,32 @@
     <div id="app">
 
         <header>
+            <!-- logo header -->
             <div class="img_logo"><img src="img/logo.png" alt="logo spotify"></div>
         </header>
 
         <main>
             <div class="container">
-
+                <!-- riga contenitore dischi -->
                 <div class="row">
-                    <div class="box">
+
+                    <!-- box singolo disco -->
+                    <div class="box" v-for="disk in disks">
+                        <!-- immagine disco -->
                         <div class="box_img">
-                            <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
+                            <img :src="disk.poster" :alt="disk.title">
                         </div>
 
-                        <div class="box_album">New Jersey</div>
+                        <!-- titolo disco -->
+                        <div class="box_album">{{disk.title}}</div>
 
+                        <!-- nome autore e data rilascio del disco -->
                         <div class="box_info">
-                            <div class="info author">Bon Jovi</div>
-                            <div class="info date">1988</div>
+                            <div class="info author">{{disk.author}}</div>
+                            <div class="info date">{{disk.year}}</div>
                         </div>
                     </div>
+
                 </div>
 
             </div>

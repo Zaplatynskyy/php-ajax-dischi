@@ -21,6 +21,7 @@ header {
     background-color: #2e3a46;
 }
 
+/* logo header */
 .img_logo {
     height: 100%;
     padding: 10px;
@@ -36,13 +37,16 @@ main {
     height: calc(100vh - 80px);
     background-color: #1e2d3b;
     padding: 50px 0;
+    overflow: auto;
 }
 
+/* riga contenitore dischi */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* box singolo disco */
 .box {
     width: calc(100% / 5 - 40px);
     text-align: center;
@@ -51,10 +55,12 @@ main {
     padding: 20px;
 }
 
+/* immagine disco */
 .box_img img{
     width: 100%;
 }
 
+/* titolo disco */
 .box_album {
     font-size: 1.2rem;
     font-weight: bold;
@@ -63,7 +69,9 @@ main {
     margin: 10px 0;
 }
 
-.box_info .info {
+/* nome autore e data rilascio del disco */
+.box_info{
     font-size: .9rem;
     color: #72685f;
+    margin: 10px 0;
 }
